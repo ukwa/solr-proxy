@@ -1,6 +1,5 @@
-FROM openresty/openresty:alpine-fat
+FROM nginx:alpine
 
-COPY index.html web.js /usr/share/nginx/html/
-COPY nginx/shine.conf /etc/nginx/conf.d/default.conf
+COPY solr-proxy.conf /etc/nginx/conf.d/default.conf
 
 
